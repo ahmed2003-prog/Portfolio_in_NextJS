@@ -1,0 +1,42 @@
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+height: 100vh;
+overflow: hidden;
+background-image: url('/images/wp.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+flex-direction: column;
+padding: 20px;
+text-align: center;
+}
+
+.main {
+max-width: 800px;
+width: 100%;
+padding: 20px;
+background: rgba(255, 255, 255, 0.1);
+border-radius: 12px;
+backdrop-filter: blur(10px);
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+animation: fadeIn 1.5s ease-out;
+}

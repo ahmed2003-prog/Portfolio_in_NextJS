@@ -1,0 +1,95 @@
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+
+  .homeLink {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: rgb(41, 40, 40);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .homeLink:hover {
+    color: #0056b3;
+    text-decoration: none;
+  }
+  
+  .title {
+    text-align: center;
+    color: rgb(41, 40, 40);
+    margin-bottom: 2rem;
+    font-size: 4em;
+    font-weight: bold;
+    animation: expand 5s infinite alternate;
+  }
+
+  @keyframes expand {
+  0% {
+  transform: scale(1.25);
+  }
+  100% {
+  transform: scale(1.30);
+  }
+  }
+
+  .navHomeButton:hover {
+    background-color: #103050;
+    transform: scale(1.2);
+  }
+  
+  .experienceList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .experienceCard {
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .experienceCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .duration {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .skills {
+    margin-top: 1rem;
+  }
+  
+  .skill {
+    display: inline-block;
+    background: #0070f3;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+  }
+  
+  .navHomeButton {
+    background-color: #1b416b;
+    color: wheat;
+    scale: 1.2;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: lighter;
+    transition: background-color 0.3s, transform 0.3s ease;
+  }
